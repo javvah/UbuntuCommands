@@ -1,0 +1,19 @@
+Alt+Ctl+F3
+--------------------------
+nano /etc/sudoers
+user_name ALL=(ALL)  ALL
+
+
+-------------------------------
+sudo nano /usr/bin/gnome-terminal
+-------------
+sudo nano /etc/default/locale
+Add utf-8 to ensudo 
+sudo locale-gen --purge
+
+sudo apt remove gnome-terminal
+-----------------------------------------------------------------
+sudo apt-get -o Dpkg::Options::="--force-overwrite" install --fix-broken
+sudo apt -f --fix-broken install
+sudo dpkg --configure --force-overwrite -a
+sudo apt --fix-broken install
